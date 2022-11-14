@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: chess_game.chess_game.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in chess_game.chess_game.AppTest
