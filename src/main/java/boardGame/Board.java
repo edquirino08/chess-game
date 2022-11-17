@@ -28,20 +28,32 @@ public class Board {
 		this.columns = columns;
 	}
 
-	
-	public Piece piece (int row, int column) {
+	public Piece piece(int row, int column) {
 		return pieces[row][column];
-		
+
 	}
-	
-	public Piece piece (Position position) {
+
+	public Piece piece(Position position) {
 		return pieces[position.getRow()][position.getColoumn()];
 	}
-	
-	public void placePiece(Piece piece , Position position) {
+
+	public void placePiece(Piece piece, Position position) {
 		pieces[position.getRow()][position.getColoumn()] = piece;
 		piece.position = position;
-		
-		
+
+	}
+
+	public boolean positionExists(int row, int column) {
+		return row >= 0 && row < rows && column >= 0 && column < columns;
+
+	}
+
+	public boolean positionExists(Position position) {
+		return positionExists(position.getRow(), position.getColoumn());
+
+	}
+	
+	public boolean thereIsAPiece (Position position) {
+		return piece(position) !=null;
 	}
 }
