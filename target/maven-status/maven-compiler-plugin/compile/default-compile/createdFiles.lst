@@ -1,1 +1,11 @@
-chess_game\chess_game\App.class
+chess\pieces\King.class
+boardgame\BoardException.class
+application\Program.class
+application\UI.class
+chess\ChessMatch.class
+chess\ChessPiece.class
+chess\Color.class
+boardgame\Board.class
+boardgame\Position.class
+chess\pieces\Rook.class
+boardgame\Piece.class
